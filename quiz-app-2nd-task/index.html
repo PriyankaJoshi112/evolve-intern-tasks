@@ -1,0 +1,117 @@
+svg<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Awesome Quiz App</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+
+  <!-- SCREEN-1 -->
+  <!-- START QUIZ BUTTON-->
+  <div class="start-btn">
+    <button>Start Quiz</button>
+  </div>
+
+
+  <!-- SCREEN-2 -->
+  <!-- INFO BOX -->
+  <div class="info-box">
+    <div class="info-title">
+      <span>some Rules of this quiz</span>
+    </div>
+    <div class="info-list">
+      <div class="info">1. You will have only <span class="time-span">15 seconds</span> for each question.</div>
+      <div class="info">2. Once you select your answer, it can't be undone.</div>
+      <div class="info">3. You can't select any option once time goes off.</div>
+      <div class="info">4. You can't exit from the Quiz while you're playing.</div>
+      <div class="info">5. You'll get points on the basis of correct answers.</div>
+    </div>
+
+    <!-- EXIT RESTART BUTTON -->
+    <div class="buttons">
+      <button class="quit">Exit Quiz</button>
+      <button class="restart">Continue</button>
+    </div>
+  </div>
+
+  <!-- CLOCK SVG -->
+  <svg class="clock-svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#fb743a" viewBox="0 0 256 256"><path d="M128,40a96,96,0,1,0,96,96A96.11,96.11,0,0,0,128,40Zm45.66,61.66-40,40a8,8,0,0,1-11.32-11.32l40-40a8,8,0,0,1,11.32,11.32ZM96,16a8,8,0,0,1,8-8h48a8,8,0,0,1,0,16H104A8,8,0,0,1,96,16Z"></path></svg>
+
+
+  <!-- SCREEN-3 -->
+  <!-- QUIZ-BOX -->
+  <div class="quiz-box">
+    <header>
+      <div class="title">Awesome Quiz Application</div>
+      <div class="timer">
+        <div class="time-left-text">Time Left</div>
+        <div class="timer-sec">15</div>
+      </div>
+    </header>
+    <div class="time-line"></div>
+
+    <section>
+      <div class="que-text">
+        <!-- <span>Which of the following is true about variable naming conventions in Javascript?</span> -->
+      </div>
+      <div class="option-list">
+        <!-- <div class="option incorrect disabled">Javascript variable names must begin with a letter or the underscopre character.
+          <div class="icon"><svg class="" http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 48 48"><path fill="#f44336" d="M44,24c0,11.045-8.955,20-20,20S4,35.045,4,24S12.955,4,24,4S44,12.955,44,24z"></path><path fill="#fff" d="M29.656,15.516l2.828,2.828l-14.14,14.14l-2.828-2.828L29.656,15.516z"></path><path fill="#fff" d="M32.484,29.656l-2.828,2.828l-14.14-14.14l2.828-2.828L32.484,29.656z"></path></svg></div>
+        </div>
+        <div class="option correct disabled">Javscript variable names are case sensitive.
+          <div class="icon"><svg class="icon icon-tick" http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24"><path fill="#046404f9"  d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.959 17l-4.5-4.319 1.395-1.435 3.08 2.937 7.021-7.183 1.422 1.409-8.418 8.591z"/></svg></div>
+        </div>
+        <div class="option disabled">Both of the above.</div>
+        <div class="option disabled">None of the above.</div> -->
+      </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="total-que">
+        <!-- <span><p>1</p>/<p>5</p> Questions</span> -->
+        <div class="ques-number">
+          <!-- <span class="cur-ques">1</span> -->
+          <!-- <span class="all-ques">/5</span> -->
+          <!-- <span class="ques-text">Questions</span> -->
+        </div>
+      </div>
+      <button class="next-btn show">Next Ques</button>
+    </footer>
+  </div>
+
+
+  <!-- SCREEN-4 -->
+  <!-- RESULT BOX -->
+  <div class="result-box hide">
+    <div class="icon">  
+      <svg class="crown-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M576 136c0 22.09-17.91 40-40 40c-.248 0-.4551-.1266-.7031-.1305l-50.52 277.9C482 468.9 468.8 480 453.3 480H122.7c-15.46 0-28.72-11.06-31.48-26.27L40.71 175.9C40.46 175.9 40.25 176 39.1 176c-22.09 0-40-17.91-40-40S17.91 96 39.1 96s40 17.91 40 40c0 8.998-3.521 16.89-8.537 23.57l89.63 71.7c15.91 12.73 39.5 7.544 48.61-10.68l57.6-115.2C255.1 98.34 247.1 86.34 247.1 72C247.1 49.91 265.9 32 288 32s39.1 17.91 39.1 40c0 14.34-7.963 26.34-19.3 33.4l57.6 115.2c9.111 18.22 32.71 23.4 48.61 10.68l89.63-71.7C499.5 152.9 496 144.1 496 136C496 113.9 513.9 96 536 96S576 113.9 576 136z"/></svg>
+    </div>
+
+    <div class="complete-text">You've completed the Quiz!</div>
+    <div class="score-text">
+      <span>and nice, You got 2 out of 5</span>
+    </div>
+    <div class="button">
+      <button class="restart">Replay Quiz</button>
+      <button class="quit">Quit Quiz</button>
+    </div>
+  </div>
+
+  <!-- Question js file -->
+  <script src="js/questions.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+
+<!-- <svg
+xmlns="http://www.w3.org/2000/svg"
+x="0px" y="0px"
+width="48" height="48"
+viewBox="0 0 172 172" -->
