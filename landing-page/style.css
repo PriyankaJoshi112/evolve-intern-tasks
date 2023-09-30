@@ -25,9 +25,8 @@ body{
 
 .container{
   /* background: linear-gradient(45deg, rgb(0, 0, 0), rgba(34, 32, 32, 0.81), rgb(81, 70, 70)); */
-  background: -webkit-linear-gradient(to right, #000000, #EB5757); 
+  /* background: -webkit-linear-gradient(to right, #000000, #EB5757);  */
   background: linear-gradient(to right, #000000, #EB5757);
-
   width: 80%;
   height: auto;
   margin: 0 auto;

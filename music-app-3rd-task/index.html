@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="stylec.css">
+  <title>PJ MUSIC PLAYER</title>
+</head>
+<body>
+  <div class="container">
+    <div class="music-player">
+      <!-- RIGHT SECTION -->
+      <div class="player">
+        <img class="record" src="images/cassete.avif" alt="">
+        <h2 id="title">Song Name</h2>
+        <div class="slidecontainer">
+          <i class="bi bi-volume-down"></i>
+          <input type="range" name="" id="" min="0" max="100" value="50" class="slider">
+          <i class="bi bi-volume-up"></i>
+        </div>
+
+        <div class="controls">
+          <button class="previous" id="previous"><i class="bi bi-skip-start-circle step-backward"></i></button>
+          <button class="play-pause" id="play-pause"><i class="bi bi-play-fill play"></i></button>
+          <button class="next" id="next"><i class="bi bi-skip-end-circle step-forward"></i></button>
+        </div>
+      </div>
+
+      <!-- LEFT SECTION -->
+      <div class="playlist">
+        <h2>Playlist</h2>
+        <ul class="song-list">
+          <li data-src="music/7.mp3" data-name="Agar Tum Sath Ho" data-index="0"><span>Agar Tum Sath Ho</span><span>05:41</span></li>
+          <li data-src="music/8.mp3" data-name="Suna Hai" data-index="1"><span>Suna Hai</span><span>03:13</span></li>
+          <li data-src="music/9.mp3" data-name="Dilbar" data-index="2"><span>Dilbar</span><span>03:04</span></li>
+          <li data-src="music/10.mp3" data-name="Duniya" data-index="3"><span>Duniya</span><span>03:42</span></li>
+          <li data-src="music/11.mp3" data-name="Lagdi Lahore di" data-index="4"><span>Lagdi Lahore Di</span><span>03:35</span></li>
+          <li data-src="music/12.mp3" data-name="Putt Jatt Da" data-index="5"><span>Putt Jatt Da</span><span>02:44</span></li>
+          <li data-src="music/13.mp3" data-name="Baarishein" data-index="6"><span>Baarishein</span><span>04:10</span></li>
+          <li data-src="music/14.mp3" data-name="Vaaste" data-index="7"><span>Vaaste</span><span>03:16</span></li>
+          <li data-src="music/15.mp3" data-name="Lut Gaye" data-index="0"><span>Lut Gaye</span><span>04:57</span></li>
+        </ul>
+        <audio src="" id="audio"></audio>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
