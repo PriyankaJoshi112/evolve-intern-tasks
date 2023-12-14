@@ -12,6 +12,7 @@ const next_btn = document.querySelector('footer .next-btn');
 const bottom_question_number = document.querySelector('footer .total-que .ques-number');
 const time_line = document.querySelector('header .time-line')
 const restart_quiz = document.querySelector('.button .restart');
+const quit_quiz = document.querySelector('.button .quit')
 
 // REQUIRED VARIABLES
 let que_count = 0;
@@ -49,7 +50,6 @@ continue_btn.onclick = function(){
 // GETTING QUESTION AND OPTION FROM THE ARRAY
 function showQuestions(index){
   const que_text = document.querySelector('.que-text');
-
   let que_tag = '<span>'+questions[index].numb+". "+questions[index].question+'</span>';
   let option_tag = '<div class="option">'+questions[index].options[0]+'</div>'
                   +'<div class="option">'+questions[index].options[1]+'</div>'
@@ -58,7 +58,6 @@ function showQuestions(index){
 
   que_text.innerHTML = que_tag;
   option_list.innerHTML = option_tag;
-
   const option = option_list.querySelectorAll('.option'); // Return Nodelist 
 
   // SETTING ONCLICK ATTRIBUTE TO A AVAILABLE OPTION
